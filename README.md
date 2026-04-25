@@ -1,5 +1,3 @@
-🌐 [Português (BR)](README.pt_BR.md) | [Español](README.es.md)
-
 # 🎯 Soc Ops — Social Bingo
 
 > **Break the ice, make connections, win at networking!**
@@ -37,6 +35,14 @@ uv run pytest
 uv run ruff check .
 ```
 
+## ✅ Mandatory Development Checklist
+
+Before submitting any changes, ensure all of the following pass:
+
+- [ ] Lint: `uv run ruff check .` (no errors)
+- [ ] Test: `uv run pytest` (all pass)
+- [ ] Build/Run: `uv run uvicorn app.main:app --reload --port 8000` (server starts)
+
 ## 🎨 Customize Your Game
 
 ### Change Questions
@@ -49,6 +55,9 @@ questions_list: list[str] = [
     # ... 24+ questions for a full board
 ]
 ```
+
+### Workshop Guide
+👉 Follow the [Lab Guide](workshop/GUIDE.md) for a hands-on workshop experience with GitHub Copilot agents.
 
 ## 🛠️ Tech Stack
 
@@ -80,20 +89,6 @@ tests/
 
 Automatically deploys to GitHub Pages on push to `main`:
 - Your game: `https://{username}.github.io/{repo-name}`
-
----
-
-## 📚 Lab Guide
-
-| Part | Title |
-|------|-------|
-| [**00**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=00-overview) | Overview & Checklist |
-| [**01**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=01-setup) | Setup & Context Engineering |
-| [**02**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=02-design) | Design-First Frontend |
-| [**03**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=03-quiz-master) | Custom Quiz Master |
-| [**04**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=04-multi-agent) | Multi-Agent Development |
-
-> 📝 Lab guides are also available in the [`workshop/`](workshop/) folder for offline reading.
 
 ## 📝 License
 
